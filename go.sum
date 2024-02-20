@@ -19,6 +19,8 @@ github.com/coreos/go-systemd v0.0.0-20181012123002-c6f51f82210d/go.mod h1:F5haX7
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/denisbrodbeck/machineid v1.0.1 h1:geKr9qtkB876mXguW2X6TU4ZynleN6ezuMSRhl4D7AQ=
+github.com/denisbrodbeck/machineid v1.0.1/go.mod h1:dJUwb7PTidGDeYyUBmXZ2GphQBbjJCrnectwCyxcUSI=
 github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
 github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568/go.mod h1:xEzjJPgXI435gkrCt3MPfRiAkVrwSbHsst4LCFVfpJc=
 github.com/francoispqt/gojay v1.2.13/go.mod h1:ehT5mTG4ua4581f1++1WLG0vPdaA9HaiDsoyrBGkyDY=
@@ -167,8 +169,14 @@ github.com/vpnishe/anyvalue v1.0.6 h1:4musdOMUz1T1oLu+I64sdzMNpDOUjWuESscJtioe+L
 github.com/vpnishe/anyvalue v1.0.6/go.mod h1:sWC4jEy3KGOnF2MP1SCU6UtXKmmPGN3tyniVNsnZwwI=
 github.com/vpnishe/co_core v1.2.17 h1:KmRgxiTS5ZosfbHbk784Dq5QnU5KNJFuZNyPZ18Rib4=
 github.com/vpnishe/co_core v1.2.17/go.mod h1:26fEtJBB0lotOsgOVN2qNZsEnKevQZNqrV89ND+2gfc=
+github.com/vpnishe/co_core v1.2.21 h1:LtEm6cvQUdFV6Kp1YYiJluy90lvWCVSSgd4lrhJ2GOk=
+github.com/vpnishe/co_core v1.2.21/go.mod h1:jzvScIbvlxcy0BrYcQEZ9wv/h1EBt05+sTnBDmwz784=
 github.com/vpnishe/elog v1.1.1 h1:4tG4NV4VGPNNEI5f/13SHNo1OwG5Y/JDyEKFukD2GUg=
 github.com/vpnishe/elog v1.1.1/go.mod h1:DPs5qL3y9iORJI7K8nifOIkLqOpzaiDCe5kQT4ujFfw=
+github.com/vpnishe/h3conn v1.0.12 h1:resw9Y/yD52aoksRK9TMdqKrIKFfgu5ueoDN5ymU7yo=
+github.com/vpnishe/h3conn v1.0.12/go.mod h1:VrW3yCuRmamYm82HRpuyZMW8WQb+tvjmYsHF9FlPbuQ=
+github.com/vpnishe/water v1.0.5 h1:DmdYAcVVv171csg3fA+/7EaPVAHm5yY1uP3YSDlBOPI=
+github.com/vpnishe/water v1.0.5/go.mod h1:x7DhaiafEeL+vhZ8cfzq2eroZAtyNs/wKAe4T/8HplI=
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
 go.opencensus.io v0.18.0/go.mod h1:vKdFvxhtzZ9onBp9VKHK8z/sRpBMnKAsufL7wlDrCOA=

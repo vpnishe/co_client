@@ -6,7 +6,10 @@ import (
 	"os/signal"
 	"runtime"
 	"syscall"
-
+	"crypto/md5"
+	_ "embed"
+	"encoding/hex"
+	"github.com/denisbrodbeck/machineid"
 	"github.com/vpnishe/anyvalue"
 	"github.com/vpnishe/elog"
 	core "github.com/vpnishe/co_core"
@@ -15,6 +18,27 @@ import (
 var plog *elog.EasyLogger
 var Config *anyvalue.AnyValue
 var configPath string
+
+const (
+	CLIENT_STOPPED  = 0
+	CLIENT_STARTING = 1
+	CLIENT_STARTED  = 2
+)
+
+
+func GetDeviceId() string {
+	id, err := machineid.ID()
+	if err != nil {
+		return "11111111111111111111111111111111"
+	}
+
+	h := md5.New()
+	h.Write([]byte(id))
+	result := hex.EncodeToString(h.Sum(nil))
+
+	return result
+}
+
 
 func init() {
 	flag.StringVar(&configPath, "config", "./config.json", "config file path")
@@ -142,10 +166,24 @@ func main() {
 		plog.Fatal("new polevpn client fail,", err)
 	}
 
+
 	client.SetEventHandler(eventHandler)
+	
 	client.AttachTunDevice(device)
 
-	err = client.Start(Config.Get("endpoint").AsStr(), Config.Get("user").AsStr(), Config.Get("password").AsStr(), Config.Get("sni").AsStr(), Config.Get("skipVerifySSL").AsBool())
+	deviceType := "Unknown"
+	if runtime.GOOS == "darwin" {
+		networkmgr = core.NewDarwinNetworkManager()
+	} else if runtime.GOOS == "linux" {
+		networkmgr = core.NewLinuxNetworkManager()
+	} else if runtime.GOOS == "windows" {
+		networkmgr = core.NewWindowsNetworkManager()
+	} else {
+		plog.Fatal("os platform not support")
+	}
+
+	deviceId := GetDeviceId()
+	err = client.Start(Config.Get("endpoint").AsStr(), Config.Get("user").AsStr(), Config.Get("password").AsStr(), Config.Get("sni").AsStr(), Config.Get("skipVerifySSL").AsBool(), deviceType, deviceId)
 	if err != nil {
 		plog.Fatal("start polevpn client fail,", err)
 	}
