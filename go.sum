@@ -115,14 +115,6 @@ github.com/openzipkin/zipkin-go v0.1.1/go.mod h1:NtoC/o8u3JlF1lSlyPNswIbeQH9bJTm
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
-github.com/polevpn/anyvalue v1.0.6 h1:IaAtj0ZkOfAqTd1K8rc5JvDt/qFsuivzrI4LXrYC4ic=
-github.com/polevpn/anyvalue v1.0.6/go.mod h1:SAmPKOT6BtaGar2NZc9u/TUZgDYBXO7lZZ9q1MU0LVk=
-github.com/polevpn/elog v1.1.1 h1:+Nnyaajv//fbmVextCGrcFfZXi+isprA1qQag2dcwhE=
-github.com/polevpn/elog v1.1.1/go.mod h1:u30sJGFE2hYV+KuEmE4Bw7Qh0J3eXS3AEXjyHtqPDjU=
-github.com/polevpn/h3conn v1.0.12 h1:jHkXTiPIXAcPfixYBrq8mkVC2RudJDlLdMmrfGk7Ov0=
-github.com/polevpn/h3conn v1.0.12/go.mod h1:xITCjAcGpz7lk+uew+yeUWakZRW0F8SUXPdxVGgRsCU=
-github.com/polevpn/water v1.0.4 h1:OCLCeKgdQwlh4J5GjR7zzsd8u+tJ/EN8XAZQ931V6PI=
-github.com/polevpn/water v1.0.4/go.mod h1:mc/yhflKH5xQ9HKP8e4Qra21Qoh2I1DXvu1vE0mGGkM=
 github.com/prometheus/client_golang v0.8.0/go.mod h1:7SWBe2y4D6OKWSNQJUaRYU/AaXPKyh/dDVn+NZz0KFw=
 github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910/go.mod h1:MbSGuTsp3dbXC40dX6PRTWyKYBIrTGTE9sqQNg2J8bo=
 github.com/prometheus/common v0.0.0-20180801064454-c7de2306084e/go.mod h1:daVV7qP5qjZbuso7PdcryaAu0sAZbrN9i7WWcTMWvro=
@@ -167,10 +159,8 @@ github.com/vmihailenco/tagparser v0.1.2 h1:gnjoVuB/kljJ5wICEEOpx98oXMWPLj22G67Vb
 github.com/vmihailenco/tagparser v0.1.2/go.mod h1:OeAg3pn3UbLjkWt+rN9oFYB6u/cQgqMEUPoW2WPyhdI=
 github.com/vpnishe/anyvalue v1.0.6 h1:4musdOMUz1T1oLu+I64sdzMNpDOUjWuESscJtioe+L4=
 github.com/vpnishe/anyvalue v1.0.6/go.mod h1:sWC4jEy3KGOnF2MP1SCU6UtXKmmPGN3tyniVNsnZwwI=
-github.com/vpnishe/co_core v1.2.17 h1:KmRgxiTS5ZosfbHbk784Dq5QnU5KNJFuZNyPZ18Rib4=
-github.com/vpnishe/co_core v1.2.17/go.mod h1:26fEtJBB0lotOsgOVN2qNZsEnKevQZNqrV89ND+2gfc=
-github.com/vpnishe/co_core v1.2.21 h1:LtEm6cvQUdFV6Kp1YYiJluy90lvWCVSSgd4lrhJ2GOk=
-github.com/vpnishe/co_core v1.2.21/go.mod h1:jzvScIbvlxcy0BrYcQEZ9wv/h1EBt05+sTnBDmwz784=
+github.com/vpnishe/co_core v1.2.22 h1:Rwo7BH2G9+u9dGBOXZAl+/WJCCbTuXA5DlLsYgruKCE=
+github.com/vpnishe/co_core v1.2.22/go.mod h1:jzvScIbvlxcy0BrYcQEZ9wv/h1EBt05+sTnBDmwz784=
 github.com/vpnishe/elog v1.1.1 h1:4tG4NV4VGPNNEI5f/13SHNo1OwG5Y/JDyEKFukD2GUg=
 github.com/vpnishe/elog v1.1.1/go.mod h1:DPs5qL3y9iORJI7K8nifOIkLqOpzaiDCe5kQT4ujFfw=
 github.com/vpnishe/h3conn v1.0.12 h1:resw9Y/yD52aoksRK9TMdqKrIKFfgu5ueoDN5ymU7yo=

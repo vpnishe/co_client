@@ -3,7 +3,7 @@
 ## config 
 ```
 {
-    "endpoint":"quic://127.0.0.2/h3",
+    "endpoint":"wss://127.0.0.2",
     "skipVerifySSL":true,
     "user":"xxxx",
     "password":"xxxxx",
